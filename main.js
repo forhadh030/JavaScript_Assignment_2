@@ -77,10 +77,15 @@ const strLength = (string) => {
         }
     })
 }
-const result = strLength('Massachusetts')
-const result2 = strLength('New York')
-console.log(result)
-console.log(result2)
+
+// Change 'Massachussetts' to whichever State to get diff result
+strLength('Massachussetts').then((state)=>{
+  console.log("Big word")
+})
+
+.catch((state)=>{
+  console.log("Small number")
+})
 
 // Codewar exercise 1: Can we divide it? (8 kyu) //
 let isDivideBy = (number, a, b) => {
